@@ -1,12 +1,21 @@
 import React, { useContext } from "react";
-import CartContext from "../../store/CartContext";
+
 
 const Cart = props => {
-  const cartCtx = useContext(CartContext)
 
   return (
     <div>
-      
+      {props.tickets.map((ticket) => (
+         <div>
+           <span>{ticket.numbers.firstNumber}</span>
+           <span>{ticket.numbers.secondNumber}</span>
+           <span>{ticket.numbers.thirdNumber}</span>
+           <span>{ticket.numbers.fourthNumber}</span>
+           <span>{ticket.numbers.fifthNumber}</span>
+           <span>{ticket.numbers.sixthNumber}</span>
+         </div>
+         )
+      )}
     </div>
   )
 }

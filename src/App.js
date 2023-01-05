@@ -26,7 +26,7 @@ function App() {
 console.log(tickets);
   return (
     <div className="App">
-      <Cart />
+      <Cart tickets={tickets}/>
       <Header />
       <MainPage/>
       <FakeLotto onAddTicket={addTicketHandler} />

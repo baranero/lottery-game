@@ -30,8 +30,13 @@ const FakeLottoForm = (props) => {
         numbers: numbers
       }
 
+      console.log(props.onClick);
+
+
       props.onSaveNumbersData(addedTicket)
     }
+
+
 
     return (
         <form onSubmit={submitHandler}>
