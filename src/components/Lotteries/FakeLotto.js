@@ -1,4 +1,6 @@
 import { useState } from "react"
+import classes from './FakeLotto.module.css'
+import FakeLottoForm from "./FakeLottoForm"
 
 const FakeLotto = props => {
   
@@ -15,14 +17,23 @@ const FakeLotto = props => {
     }
 
   }
-console.log(numbersArray);
+  
 
-  const [] = useState()
+  const [ticket, setTicket] = useState([])
+
+   const addTicket = () => {
+    setTicket(prevTickets => [...prevTickets])
+   }
+
+   const submitHandler = event => {
+    return event.preventDefault()
+   }
 
   return (
     <section>
       <h3>Try Yourself and get rich!</h3>
-      <button type="button">Get ticket</button>
+      <button onClick={addTicket} type="button">Get ticket</button>
+      <FakeLottoForm onAddTicket={addTicket} onSubmit={submitHandler}/>
     </section>
   )
 }
