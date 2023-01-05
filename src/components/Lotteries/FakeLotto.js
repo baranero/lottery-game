@@ -15,25 +15,31 @@ const FakeLotto = props => {
       let numbers = Math.floor(Math.random() * 49 + 1)
       setNumbersArray(prevArray => [...prevArray, `${numbers} `])
     }
+  }
 
+  const saveNumbersDataHandler = (enteredNumbers) => {
+    const numbersData = {
+      ...enteredNumbers,
+      id: Math.random().toString()
+    }
   }
   
+  const [isShownTicket, setIsShowTicket] = useState(false)
+  const [formList, setFormList] = useState([])
 
-  const [ticket, setTicket] = useState([])
+  const addForm = () => {
+    setFormList(formList.concat(<FakeLottoForm key={formList.length} onSaveNumbersData={saveNumbersDataHandler} />))
+  }
 
-   const addTicket = () => {
-    setTicket(prevTickets => [...prevTickets])
-   }
-
-   const submitHandler = event => {
-    return event.preventDefault()
-   }
+  const showTicket = () => {
+    setIsShowTicket(true)
+  }
 
   return (
     <section>
       <h3>Try Yourself and get rich!</h3>
-      <button onClick={addTicket} type="button">Get ticket</button>
-      <FakeLottoForm onAddTicket={addTicket} onSubmit={submitHandler}/>
+      <button onClick={addForm} type="button">Get ticket</button>
+      {formList}
     </section>
   )
 }
