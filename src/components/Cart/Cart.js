@@ -6,7 +6,9 @@ const Cart = props => {
 
   return (
     <div>
-      <p>Total amount {`${cartCtx.totalAmount}`}</p>
+      
     </div>
   )
 }
+
+export default Cart

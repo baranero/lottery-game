@@ -3,9 +3,7 @@ import { useState } from 'react'
 import classes from './FakeLottoForm.module.css'
 
 const FakeLottoForm = (props) => {
-
-
-    
+  
     const [numbers, setNumbers] = useState({
       firstNumber: '',
       secondNumber: '',
@@ -31,9 +29,8 @@ const FakeLottoForm = (props) => {
       const addedTicket = {
         numbers: numbers
       }
+
       props.onSaveNumbersData(addedTicket)
-      
-      console.log(addedTicket);
     }
 
     return (
