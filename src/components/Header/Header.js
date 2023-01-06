@@ -1,8 +1,8 @@
-import CartIcon from "../Cart/CartIcon"
+
 import classes from "./Header.module.css"
 import HeaderCartButton from "./HeaderCartButton"
 
-const Header = props => {
+const Header = (props) => {
   return (
     <header>
       <h1>
@@ -14,7 +14,7 @@ const Header = props => {
           <li>Fake Lotto</li>
           <li>Fake Multi</li>
         </ul>
-        <HeaderCartButton/>
+        <HeaderCartButton onClick={props.onShowCart}/>
       </div>
     </header>
   )

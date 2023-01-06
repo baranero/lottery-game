@@ -1,0 +1,36 @@
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .actions {
+    text-align: right;
+  }
+
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    background-color: rgb(255, 179, 0);
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: rgb(255, 115, 0);
+    border-color: rgb(255, 115, 0);
+    color: white;
+  }
+  
+
+  
+  .actions .button {
+    background-color: rgb(255, 179, 0);
+    color: white;
+  }

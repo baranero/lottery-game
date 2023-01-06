@@ -26,8 +26,8 @@ function App() {
 console.log(tickets);
   return (
     <div className="App">
-      <Cart tickets={tickets}/>
-      <Header />
+      {cartIsShown && <Cart tickets={tickets} onClose={hideCartHandler}/>}
+      <Header onShowCart={showCartHandler}/>
       <MainPage/>
       <FakeLotto onAddTicket={addTicketHandler} />
     </div>
