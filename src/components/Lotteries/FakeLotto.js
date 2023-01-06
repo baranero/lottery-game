@@ -15,21 +15,26 @@ const FakeLotto = props => {
   const [isShownTicket, setIsShownTicket] = useState(false)
   const [formList, setFormList] = useState([])
 
+ 
+
+
   const addForm = () => {
-    setFormList(formList.concat(<FakeLottoForm id={formList.length} key={formList.length} onSaveNumbersData={saveNumbersDataHandler} />))
-  }
+    setFormList(formList.concat(<FakeLottoForm onRemoveTicket={removeTicket} id={formList.length} key={formList.length} onSaveNumbersData={saveNumbersDataHandler} />))
   
+  }
 
-
-
-  const showTicket = () => {
-    setIsShownTicket(true)
+  const removeTicket = () => {
+    setFormList(current =>
+      current.filter(formListItem => {
+        return +formListItem.key !== formList.length
+      }))
   }
 
   return (
     <section>
       <h3>Try Yourself and get rich!</h3>
-      <button onClick={addForm} type="button">Get ticket</button>
+      <button className={classes['get-button']} onClick={addForm} type="button">Get ticket</button>
+      
       <span>{formList}</span>
 
     </section>

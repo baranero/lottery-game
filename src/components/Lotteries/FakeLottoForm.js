@@ -35,7 +35,10 @@ const FakeLottoForm = (props) => {
 
       props.onSaveNumbersData(addedTicket)
     }
-
+    
+    const removeItem = () => {
+      console.log(props.id);
+    }
 
 
     return (
@@ -94,7 +97,10 @@ const FakeLottoForm = (props) => {
             value={numbers.sixthNumber}
             onChange={changeHandler}
           />
-          <button type='submit'>Submit</button>
+          <div className={classes['button-group']}>
+            <button className={classes['tickets-button']} type='submit'>Submit</button>
+            <button className={classes['tickets-button']} onClick={props.onRemoveTicket} type='button'>Delete </button>
+          </div>
         </form>
   )
 }

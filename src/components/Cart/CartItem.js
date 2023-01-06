@@ -1,7 +1,9 @@
 const CartItem = props => {
-    <li className={classes['cart-item']}>
+
+  return (
+    <li>
       <div>
-        <h2>name</h2>
+        <h2>{props.first} {props.second}</h2>
         <div>
           <span>price</span>
           <span>x amount</span>
@@ -11,6 +13,9 @@ const CartItem = props => {
         <button onClick={props.onRemove}>Delete</button>
       </div>
     </li>
+  )
+
 }
 
 export default CartItem 
+

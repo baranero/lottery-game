@@ -1,9 +1,7 @@
 section {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+
 }
 
-button {
+.get-button {
   margin: 0 auto;
 }
