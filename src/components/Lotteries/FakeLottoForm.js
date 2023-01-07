@@ -29,18 +29,10 @@ const FakeLottoForm = (props) => {
       const addedTicket = {
         numbers: numbers
       }
-
-      console.log(props.onClick);
-
-
+      
       props.onSaveNumbersData(addedTicket)
     }
     
-    const removeItem = () => {
-      console.log(props.id);
-    }
-
-
     return (
         <form onSubmit={submitHandler}>
           <h3>{+props.id + 1}</h3>

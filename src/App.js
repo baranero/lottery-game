@@ -23,10 +23,17 @@ function App() {
       return [...prevTickets, ticket]
     }))
   }
-console.log(tickets);
+
+  const removeTicketHandler = (event) => {
+  setTickets(current =>
+    current.filter(ticketsItem => {
+      return +ticketsItem.id !== +event.target.value
+    }))
+  }
+
   return (
     <div className="App">
-      {cartIsShown && <Cart tickets={tickets} onClose={hideCartHandler}/>}
+      {cartIsShown && <Cart tickets={tickets} onClose={hideCartHandler} onRemove={removeTicketHandler}/>}
       <Header onShowCart={showCartHandler} tickets={tickets}/>
       <MainPage/>
       <FakeLotto onAddTicket={addTicketHandler} />

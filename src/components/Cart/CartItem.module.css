@@ -23,3 +23,15 @@
     justify-content: space-between;
     font-size: 2rem;
   }
+
+  .delete {
+    text-align: center;
+    font: inherit;
+    cursor: pointer;
+    background-color: rgb(255, 179, 0);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    margin-left: 0;
+    width: max-content;
+  }

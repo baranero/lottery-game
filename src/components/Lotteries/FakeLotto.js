@@ -7,20 +7,18 @@ const FakeLotto = props => {
   const saveNumbersDataHandler = (enteredNumbers) => {
     const numbersData = {
       ...enteredNumbers,
-      id: Math.random().toString()
+      id: Math.random().toString(),
+      price: 2,
+      
     }
-    props.onAddTicket(enteredNumbers)
+    props.onAddTicket(numbersData)
   }
   
   const [isShownTicket, setIsShownTicket] = useState(false)
   const [formList, setFormList] = useState([])
 
- 
-
-
   const addForm = () => {
     setFormList(formList.concat(<FakeLottoForm onRemoveTicket={removeTicket} id={formList.length} key={formList.length} onSaveNumbersData={saveNumbersDataHandler} />))
-  
   }
 
   const removeTicket = () => {
