@@ -43,6 +43,7 @@ const FakeLottoForm = (props) => {
 
     return (
         <form onSubmit={submitHandler}>
+          <h3>{+props.id + 1}</h3>
           <input
             type="number"
             max='49'

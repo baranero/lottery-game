@@ -14,7 +14,7 @@ const Header = (props) => {
           <li>Fake Lotto</li>
           <li>Fake Multi</li>
         </ul>
-        <HeaderCartButton onClick={props.onShowCart}/>
+        <HeaderCartButton tickets={props.tickets} onClick={props.onShowCart}/>
       </div>
     </header>
   )

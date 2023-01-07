@@ -1,9 +1,17 @@
+import classes from './CartItem.module.css'
 const CartItem = props => {
 
   return (
-    <li>
+    <li className={classes['cart-item']}>
       <div>
-        <h2>{props.first} {props.second}</h2>
+        <div className={classes.numbers}>
+          <span className={classes['number-item']}>{props.first}</span>
+          <span className={classes['number-item']}>{props.second}</span>
+          <span className={classes['number-item']}>{props.third}</span>
+          <span className={classes['number-item']}>{props.fourth}</span>
+          <span className={classes['number-item']}>{props.fifth}</span>
+          <span className={`${classes['number-item']} ${classes['last-number']}`}>{props.sixth}</span>
+        </div>
         <div>
           <span>price</span>
           <span>x amount</span>
