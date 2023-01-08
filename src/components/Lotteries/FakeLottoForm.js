@@ -36,10 +36,10 @@ const FakeLottoForm = (props) => {
       
       props.onSaveNumbersData(addedTicket)
     }
+
     
     return (
         <form onSubmit={submitHandler}>
-          <h3>{+props.id + 1}</h3>
           <input
             type="number"
             max='49'

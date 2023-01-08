@@ -1,7 +1,17 @@
-section {
-
-}
-
 .get-button {
   margin: 1rem auto;
+}
+
+section {
+  margin: 0 auto;
+}
+
+ol {
+  width: 25%;
+  margin: 0 auto;
+}
+
+li {
+
+text-align: center;
 }
