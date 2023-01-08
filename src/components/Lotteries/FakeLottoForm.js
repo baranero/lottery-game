@@ -12,6 +12,8 @@ const FakeLottoForm = (props) => {
       fifthNumber: '',
       sixthNumber: ''
     })
+
+    const [isSubmitted, setIsSubmitted] = useState(false)
   
     const changeHandler = event => {
       const {name, value} = event.target
@@ -25,6 +27,8 @@ const FakeLottoForm = (props) => {
   
      const submitHandler = (event) => {
       event.preventDefault()
+
+      setIsSubmitted(true)
   
       const addedTicket = {
         numbers: numbers
@@ -91,7 +95,7 @@ const FakeLottoForm = (props) => {
             onChange={changeHandler}
           />
           <div className={classes['button-group']}>
-            <button className={classes['tickets-button']} type='submit'>Submit</button>
+            <button disabled={isSubmitted ? true : false} className={classes['tickets-button']} type='submit'>Submit</button>
             <button className={classes['tickets-button']} onClick={props.onRemoveTicket} type='button'>Delete </button>
           </div>
         </form>
