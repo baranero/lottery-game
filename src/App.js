@@ -9,6 +9,8 @@ function App() {
 
   const [cartIsShown, setCartIsShown] = useState(false)
   const [tickets, setTickets] = useState([])
+  const [lottoIsShown, setLottoIsShown] = useState(false)
+  const [mainPageIsShown, setMainPageIsShown] = useState(true)
 
   const showCartHandler = () => {
     setCartIsShown(true)
@@ -16,6 +18,11 @@ function App() {
 
   const hideCartHandler = () => {
     setCartIsShown(false)
+  }
+
+  const showLotto = () => {
+    setLottoIsShown(true)
+    setMainPageIsShown(false)
   }
 
   const addTicketHandler = (ticket) => {
@@ -34,9 +41,9 @@ function App() {
   return (
     <div className="App">
       {cartIsShown && <Cart tickets={tickets} onClose={hideCartHandler} onRemove={removeTicketHandler}/>}
-      <Header onShowCart={showCartHandler} tickets={tickets}/>
-      <MainPage/>
-      <FakeLotto onAddTicket={addTicketHandler} />
+      <Header onShowCart={showCartHandler} tickets={tickets} onShowLotto={showLotto} />
+      {mainPageIsShown && <MainPage onShowLotto={showLotto}/>}
+      {lottoIsShown && <FakeLotto onAddTicket={addTicketHandler} />}
     </div>
   );
 }

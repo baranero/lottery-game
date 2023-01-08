@@ -10,8 +10,8 @@ const Header = (props) => {
       </h1>
       <div className={classes.navigation}>
         <ul>
+          <li onClick={props.onShowLotto}>Fake Lotto</li>
           <li>Fake Jackpot</li>
-          <li>Fake Lotto</li>
           <li>Fake Multi</li>
         </ul>
         <HeaderCartButton tickets={props.tickets} onClick={props.onShowCart}/>

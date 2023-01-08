@@ -17,5 +17,10 @@ ul {
 }
 
 li {
-  padding: 0 1rem;
+  padding: 1rem;
+}
+
+li:hover {
+  background: rgb(255, 238, 0);
+  cursor: pointer;
 }

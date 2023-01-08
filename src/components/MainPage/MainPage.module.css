@@ -1,4 +1,21 @@
 section {
-  text-align: center;
-  padding: 2rem;
+  margin: 0;
+  padding: 4rem;
+  width: 500px;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 2rem;
+  letter-spacing: 0.05rem;
+  line-height: 3rem;
+}
+
+.start-button {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 3rem;
 }

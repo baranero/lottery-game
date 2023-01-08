@@ -3,11 +3,9 @@ import classes from "./MainPage.module.css"
 const MainPage = props => {
   return (
     <section>
-      <h2>Todays lotteries result</h2>
-      <p>Fake Jackpot</p>
-      <p>5, 6 & 12, 14, 15, 43, 33</p>
-      <p>Fake Lotto</p>
-      <p>6, 12, 14, 22, 43, 46</p>
+      <h2>Take the chance to change your life</h2>
+      <p>Fake Lottery is a fake web application inspired by the most popular games</p>
+      <button onClick={props.onShowLotto} className={classes['start-button']}>Start now!</button>
     </section>
   )
 }
