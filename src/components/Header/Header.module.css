@@ -4,6 +4,7 @@ header {
   align-items: center;
   padding: 2rem 4rem;
   background: rgb(235, 255, 81);
+  box-shadow: 0 4px 30px rgb(124, 124, 124);
 }
 
 .navigation {
