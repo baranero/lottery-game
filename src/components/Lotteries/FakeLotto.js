@@ -34,7 +34,7 @@ const FakeLotto = props => {
   console.log(formList);
 
   return (
-    <section>
+    <section className={classes.lottery}>
       <h3>Try Yourself and get rich!</h3>
       <button className={classes['get-button']} onClick={addForm} type="button">Get ticket</button>
       <ol>

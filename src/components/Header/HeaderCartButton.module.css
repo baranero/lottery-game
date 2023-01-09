@@ -4,7 +4,7 @@ button {
   border: none;
   padding: 0.6rem;
   border-radius: 3rem;
-  background: rgb(255, 179, 0);
+  background: rgb(255, 210, 105);
   cursor: pointer;
   font: inherit;
 }
@@ -12,11 +12,10 @@ button {
 .icon {
   width: 1.5rem;
   height: 1.5rem;
-  margin-right: 0.5rem;
 }
 
 .badge {
-  background-color: rgb(255, 115, 0);
+  background-color: rgb(255, 163, 87);
   padding: 0.25rem 1rem;
   border-radius: 25px;
   margin-left: 1rem;

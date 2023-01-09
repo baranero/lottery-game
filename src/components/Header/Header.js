@@ -1,13 +1,11 @@
-
+import logo from '../../images/logo.png'
 import classes from "./Header.module.css"
 import HeaderCartButton from "./HeaderCartButton"
 
 const Header = (props) => {
   return (
     <header>
-      <h1>
-        Fake Lottery
-      </h1>
+      <img src={logo} />
       <div className={classes.navigation}>
         <ul>
           <li onClick={props.onShowLotto}>Fake Lotto</li>

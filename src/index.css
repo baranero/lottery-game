@@ -1,15 +1,16 @@
 body {
+  overflow: scroll;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(255, 255, 227);
   background-image: url(images/lottery-background.png);
   background-repeat: no-repeat;
   background-size: 60%;
-  background-position: 90% 150px;
+  background-position: right top 200px;
+
 }
 
 code {
