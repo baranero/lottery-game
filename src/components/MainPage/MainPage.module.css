@@ -5,13 +5,15 @@
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
+  text-shadow: 1px 1px 1px black, 0 0 10px rgb(255, 210, 105), 0 0 5px rgb(255, 210, 105);
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.05rem;
   line-height: 3rem;
+  text-shadow: 1px 1px 1px black, 0 0 10px rgb(255, 210, 105), 0 0 5px rgb(255, 210, 105);
 }
 
 .start-button {

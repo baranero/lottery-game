@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { Fragment, useContext, useState } from 'react';
 import Cart from './components/Cart/Cart';
 import Header from './components/Header/Header';
 import FakeLotto from './components/Lotteries/FakeLotto';
 import MainPage from './components/MainPage/MainPage';
+import AuthContext from './store/AuthContext';
 
 
 function App() {
@@ -38,13 +39,15 @@ function App() {
     }))
   }
 
+  const ctx = useContext(AuthContext)
+
   return (
-    <div className="App">
-      {cartIsShown && <Cart tickets={tickets} onClose={hideCartHandler} onRemove={removeTicketHandler}/>}
-      <Header onShowCart={showCartHandler} tickets={tickets} onShowLotto={showLotto} />
-      {mainPageIsShown && <MainPage onShowLotto={showLotto}/>}
-      {lottoIsShown && <FakeLotto onAddTicket={addTicketHandler} />}
-    </div>
+    <Fragment>
+        {ctx.isLoggedIn && cartIsShown && <Cart tickets={tickets} onClose={hideCartHandler} onRemove={removeTicketHandler}/>}
+        <Header onShowCart={showCartHandler} tickets={tickets} onShowLotto={showLotto} />
+        {mainPageIsShown && <MainPage onShowLotto={showLotto}/>}
+        {ctx.isLoggedIn && lottoIsShown && <FakeLotto onAddTicket={addTicketHandler} />}
+    </Fragment>
   );
 }
 
