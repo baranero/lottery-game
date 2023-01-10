@@ -21,7 +21,7 @@ function App() {
   }
 
   const showLotto = () => {
-    setLottoIsShown(true)
+    setLottoIsShown(prevState => !prevState)
     setMainPageIsShown(false)
   }
 

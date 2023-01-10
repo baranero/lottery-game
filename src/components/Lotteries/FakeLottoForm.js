@@ -41,7 +41,7 @@ const FakeLottoForm = (props) => {
     return (
         <form className={classes.formsheet} onSubmit={submitHandler}>
           <input
-            type="number"
+            type="text"
             max='49'
             min='0'
             step='1'
