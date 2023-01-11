@@ -17,7 +17,7 @@ export const AuthContextProvider = (props) => {
     }
   }, [])
 
-  const logoutHnadler = () => {
+  const logoutHandler = () => {
     localStorage.removeItem('isLoggedIn')
     setIsLoggedIn(false)
   }
@@ -31,7 +31,7 @@ export const AuthContextProvider = (props) => {
     <AuthContext.Provider
       value={{
         isLoggedIn: isLoggedIn,
-        onLogout: logoutHnadler,
+        onLogout: logoutHandler,
         onLogin: loginHandler
       }}
     >

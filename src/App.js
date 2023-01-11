@@ -1,10 +1,10 @@
 import { Fragment, useContext, useState } from 'react';
 import Cart from './components/Cart/Cart';
 import Header from './components/Header/Header';
+import Login from './components/Login/Login';
 import FakeLotto from './components/Lotteries/FakeLotto';
 import MainPage from './components/MainPage/MainPage';
-import AuthContext from './store/AuthContext';
-
+import AuthContext from './store/auth-context'
 
 function App() {
 
@@ -40,11 +40,12 @@ function App() {
   }
 
   const ctx = useContext(AuthContext)
-
+  console.log(ctx.onLogout);
   return (
-    <Fragment>
-        {ctx.isLoggedIn && cartIsShown && <Cart tickets={tickets} onClose={hideCartHandler} onRemove={removeTicketHandler}/>}
+   <Fragment>
+        {cartIsShown && <Cart tickets={tickets} onClose={hideCartHandler} onRemove={removeTicketHandler}/>}
         <Header onShowCart={showCartHandler} tickets={tickets} onShowLotto={showLotto} />
+        {!ctx.isLoggedIn && <Login />}
         {mainPageIsShown && <MainPage onShowLotto={showLotto}/>}
         {ctx.isLoggedIn && lottoIsShown && <FakeLotto onAddTicket={addTicketHandler} />}
     </Fragment>
