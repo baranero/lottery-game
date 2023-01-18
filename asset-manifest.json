@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/fake-lottery/static/css/main.0f2f1c4e.css",
-    "main.js": "/fake-lottery/static/js/main.54802e5e.js",
-    "static/js/787.0a81b307.chunk.js": "/fake-lottery/static/js/787.0a81b307.chunk.js",
-    "static/media/lottery-background.png": "/fake-lottery/static/media/lottery-background.6b0ab2f4f124dc5fcef2.png",
-    "index.html": "/fake-lottery/index.html",
-    "main.0f2f1c4e.css.map": "/fake-lottery/static/css/main.0f2f1c4e.css.map",
-    "main.54802e5e.js.map": "/fake-lottery/static/js/main.54802e5e.js.map",
-    "787.0a81b307.chunk.js.map": "/fake-lottery/static/js/787.0a81b307.chunk.js.map"
+    "main.css": "/lottery-game/static/css/main.304f7e83.css",
+    "main.js": "/lottery-game/static/js/main.80382b1e.js",
+    "static/js/787.0a81b307.chunk.js": "/lottery-game/static/js/787.0a81b307.chunk.js",
+    "static/media/lottery-background.png": "/lottery-game/static/media/lottery-background.6b0ab2f4f124dc5fcef2.png",
+    "index.html": "/lottery-game/index.html",
+    "main.304f7e83.css.map": "/lottery-game/static/css/main.304f7e83.css.map",
+    "main.80382b1e.js.map": "/lottery-game/static/js/main.80382b1e.js.map",
+    "787.0a81b307.chunk.js.map": "/lottery-game/static/js/787.0a81b307.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f2f1c4e.css",
-    "static/js/main.54802e5e.js"
+    "static/css/main.304f7e83.css",
+    "static/js/main.80382b1e.js"
   ]
 }
