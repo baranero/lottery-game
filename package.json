@@ -1,7 +1,7 @@
 {
   "name": "lottery-game",
   "version": "0.1.0",
-  "homepage": "https://baranero.github.io/fake-lottery",
+  "homepage": "https://baranero.github.io/lottery-game",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
