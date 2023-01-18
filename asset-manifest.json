@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/fake-lottery/static/css/main.0f2f1c4e.css",
+    "main.js": "/fake-lottery/static/js/main.54802e5e.js",
+    "static/js/787.0a81b307.chunk.js": "/fake-lottery/static/js/787.0a81b307.chunk.js",
+    "static/media/lottery-background.png": "/fake-lottery/static/media/lottery-background.6b0ab2f4f124dc5fcef2.png",
+    "index.html": "/fake-lottery/index.html",
+    "main.0f2f1c4e.css.map": "/fake-lottery/static/css/main.0f2f1c4e.css.map",
+    "main.54802e5e.js.map": "/fake-lottery/static/js/main.54802e5e.js.map",
+    "787.0a81b307.chunk.js.map": "/fake-lottery/static/js/787.0a81b307.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f2f1c4e.css",
+    "static/js/main.54802e5e.js"
+  ]
+}
