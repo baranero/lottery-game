@@ -12,10 +12,6 @@ const CartItem = props => {
           <span className={classes['number-item']}>{props.fifth}</span>
           <span className={`${classes['number-item']} ${classes['last-number']}`}>{props.sixth}</span>
         </div>
-        <div>
-          <span>price</span>
-          <span>x amount</span>
-        </div>
       </div>
       <div>
         <button value={props.item.id} onClick={props.onRemove}>Delete</button>
